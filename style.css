@@ -8,9 +8,6 @@ header {
     padding: 10px 20px;
     background-color: #232323;
     display: flex;
-    z-index: 10;
-    /* Adiciona um fundo para melhor visualização, remova se desnecessário */
-    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 div a {
@@ -18,6 +15,7 @@ div a {
     color: white;
     margin-right: 40px; /* Espaçamento entre os links */
     text-decoration: none; /* Remove o sublinhado dos links */
+    
 
 }
 
@@ -62,9 +60,11 @@ body {
 /* Estilos para a seção de banner */
 .banner {
     background: url('img/banner.png') no-repeat center center;
-    background-size: cover;
-    text-align: center;
+    background-size: contain; /* Evita cortar a imagem, ajusta ao tamanho do container */
+    width: 100vw; /* Garante que o banner cubra toda a largura da janela */
+    height: auto; /* Ajusta a altura conforme necessário */
     padding: 220px 0;
+    margin: 0; /* Remove qualquer margem extra */
 }
 
 /* Botões da seção de quizzes */
@@ -153,4 +153,76 @@ body {
     text-decoration: underline;
     display: block;
     margin-top: 20px;
+}
+
+/* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    /* Ajustar o layout do header */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajustar o espaçamento entre os links */
+    div a {
+        margin-right: 20px;
+        margin-bottom: 10px; /* Espaçamento entre links no modo coluna */
+    }
+
+    /* Ajustar o tamanho da logo */
+    .logo img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    /* Ajustar a largura dos botões */
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-red {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    /* Ajustar a barra de pesquisa */
+    .search-bar input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn-search {
+        padding: 10px;
+    }
+
+    /* Ajustar a grade de quizzes para uma coluna */
+    .quiz-grid {
+        grid-template-columns: repeat(2, 1fr); /* Alterar para 2 colunas */
+    }
+
+    /* Ajustar as imagens dos quizzes */
+    .quiz img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Para dispositivos com largura de tela menor que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    /* Ajustar ainda mais o layout da grid de quizzes */
+    .quiz-grid {
+        grid-template-columns: 1fr; /* Uma coluna apenas */
+    }
+
+    /* Reduzir o tamanho dos botões */
+    .btn-red {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    /* Ajustar o tamanho da barra de pesquisa */
+    .search-bar input {
+        width: 90%;
+    }
 }
