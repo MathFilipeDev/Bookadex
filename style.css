@@ -15,8 +15,6 @@ div a {
     color: white;
     margin-right: 40px; /* Espaçamento entre os links */
     text-decoration: none; /* Remove o sublinhado dos links */
-    
-
 }
 
 nav {
@@ -33,20 +31,25 @@ nav {
 }
 
 
+.nav-right {
+    margin-left: auto; /* Empurra o contêiner para a direita */
+    display: flex; /* Alinha os itens em linha */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
 .nav-right .btn {
     background-color: #5fcea7;
     color: #232323;
     padding: 10px 20px;
     border-radius: 50px;
     text-decoration: none;
-    text-align: right;
+    margin-right: 15px; /* Espaçamento entre os botões */
 }
 
 .nav-right .login {
     color: #5fcea7;
     text-decoration: none;
     font-weight: bold;
-    text-align: right;
 }
 
 
@@ -60,10 +63,10 @@ body {
 /* Estilos para a seção de banner */
 .banner {
     background: url('img/banner.png') no-repeat center center;
-    background-size: contain; /* Evita cortar a imagem, ajusta ao tamanho do container */
-    width: 100vw; /* Garante que o banner cubra toda a largura da janela */
+    background-size: cover; /* Evita cortar a imagem, ajusta ao tamanho do container */
+    width: auto; /* Garante que o banner cubra toda a largura da janela */
     height: auto; /* Ajusta a altura conforme necessário */
-    padding: 220px 0;
+    padding: 300px 0;
     margin: 0; /* Remove qualquer margem extra */
 }
 
