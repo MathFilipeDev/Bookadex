@@ -10,7 +10,7 @@ header {
     display: flex;
 }
 
-div a {
+nav div a {
     display: inline-block;
     color: white;
     margin-right: 40px; /* Espaçamento entre os links */
@@ -107,6 +107,7 @@ body {
 .btn-search {
     background-color: #00b0a3;
     color: white;
+    height: 45px;
     border: none;
     padding: 10px 20px;
     border-radius: 0 5px 5px 0;
@@ -125,7 +126,7 @@ body {
 
 .quiz-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -137,8 +138,8 @@ body {
 }
 
 .quiz img {
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 20px;
 }
 
 .quiz p {
@@ -148,13 +149,6 @@ body {
 
 .quiz span {
     color: gray;
-}
-
-.quizzes-highlight a {
-    color: #fff;
-    text-decoration: underline;
-    display: block;
-    margin-top: 20px;
 }
 
 /* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
