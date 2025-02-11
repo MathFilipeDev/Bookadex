@@ -130,8 +130,7 @@ body {
 }
 
 .quiz {
-    background-color: #ffffff;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
