@@ -21,7 +21,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
 }
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    padding-right: 20px; /* Espaço para não grudar no canto */
+}
+
+
 
 
 .logo img {
