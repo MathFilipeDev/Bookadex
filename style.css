@@ -37,7 +37,7 @@ nav {
     align-items: center; /* Alinha verticalmente os itens no centro */
 }
 
-.nav-right .btn {
+.nav-right .premium-btn {
     background-color: #5fcea7;
     color: #232323;
     padding: 10px 20px;
@@ -195,7 +195,7 @@ body {
         font-size: 14px;
     }
 
-    .btn-search {
+    .premium-btn-search {
         padding: 10px;
     }
 
