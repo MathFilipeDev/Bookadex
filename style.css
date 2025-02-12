@@ -25,10 +25,6 @@ nav {
     padding: 10px 20px;
 }
 
-.nav-links {
-    flex-grow: 1;
-    display: flex;
-}
 
 .nav-right {
     display: flex;
@@ -133,7 +129,7 @@ body {
 /* Seção de quizzes em destaque */
 .quizzes-highlight {
     text-align: center;
-    margin: 40px 0;
+    margin: 60px;
 }
 
 .quizzes-highlight h2 {
@@ -141,6 +137,7 @@ body {
 }
 
 .quiz-grid {
+    margin: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -148,7 +145,6 @@ body {
 
 .quiz {
     color: rgb(255, 255, 255);
-    padding: 15px;
     border-radius: 10px;
     text-align: center;
 }
@@ -165,6 +161,68 @@ body {
 
 .quiz span {
     color: gray;
+}
+
+.character-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 40px 80px;
+}
+
+.character-content {
+    max-width: 50%;
+    color: white;
+}
+
+.character-content h2 {
+    color: #00c285;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.character-description {
+    margin-bottom: 15px;
+}
+
+.character-description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.character-description p {
+    color: #a0a0a0;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #d73030;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: #e5e5e5;
+    color: #d73030;
+    margin-right: 350px;
+}
+
+.character-image img {
+    max-width: 530px;
+    border-radius: 10px;
+    margin-right: 50px;
 }
 
 /* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
