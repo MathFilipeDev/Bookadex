@@ -50,7 +50,7 @@ nav {
 }
 
 .nav-right .premium-btn {
-    background-color: #5fcea7;
+    background-color: #00c285;
     color: #232323;
     padding: 10px 20px;
     border-radius: 50px;
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-right .login {
-    color: #5fcea7;
+    color: #00c285;
     text-decoration: none;
     font-weight: bold;
 }
@@ -133,7 +133,8 @@ body {
 }
 
 .quizzes-highlight h2 {
-    color: #00b0a3;
+    color: #00c285;
+    font-size: 2.0rem;
 }
 
 .quiz-grid {
@@ -224,6 +225,44 @@ body {
     border-radius: 10px;
     margin-right: 50px;
 }
+
+.ranking-challenges-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding: 40px 80px;
+}
+
+.ranking-challenges-container {
+    max-width: 50%;
+    color: white;
+}
+
+.ranking-challenges-container h2 {
+    color: #00c285;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ranking-challenges-container {
+    margin-bottom: 15px;
+}
+
+.ranking-challenges-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ranking-challenges-container p {
+    color: #a0a0a0;
+}
+
+.medal-image img {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
 @media (max-width: 768px) {
