@@ -263,6 +263,17 @@ body {
     justify-content: center;
 }
 
+.btn.primary.ranking {
+    background-color: #fab60a;
+    color: #1c1c1c;
+}
+
+.btn.secondary.ranking {
+    background-color: #fab60a;
+    color: #1c1c1c;
+    margin-right: 350px;
+}
+
 
 /* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
 @media (max-width: 768px) {
